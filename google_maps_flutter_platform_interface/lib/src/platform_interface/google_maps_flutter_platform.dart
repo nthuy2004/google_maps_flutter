@@ -3,7 +3,7 @@
 // found in the LICENSE file.
 
 import 'dart:async';
-
+import 'dart:core';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
@@ -163,7 +163,7 @@ abstract class GoogleMapsFlutterPlatform extends PlatformInterface {
   Future<void> animateCamera(
     CameraUpdate cameraUpdate, {
     required int mapId,
-    Durations? animationDuration,
+    Duration? animationDuration,
   }) {
     throw UnimplementedError('animateCamera() has not been implemented.');
   }
